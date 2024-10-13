@@ -30,7 +30,7 @@ categories = ["distributed-systems", "database-implementations"]
 homepage = "https://github.com/lablup/raftify"
 
 [workspace.dependencies]
-raftify = { path = "raftify" }
+raftify = { path = "raftify", features = ["heed_storage", "inmemory_storage", "tls"] }
 example-harness = { path = "examples" }
 memstore-example-harness = { path = "examples/memstore" }
 
